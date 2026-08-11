@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Сайт про кучу форм и чекбоксов</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <main>
+        <header>
+            <h1>Сайт, где можно понажимать много кнопок;&#41</h1>
+
+            Меню по кнопкам представленно ниже:
+            <nav>
+                <ol>
+                    <li><a href="#text">Ввести текст</a></li>
+                    <li><a href="#email">Ввести email</a></li>
+                    
+                    <li><a href="#pass">Создать пароль</a></li>
+                    <li><a href="#num">Придумать число</a></li>
+                    
+                    <li><a href="#checkbox">Проверить чекбокс</a></li>
+                    <li><a href="#data">Выбрать дату</a></li>
+                    
+                    <li><a href="#radio">Выбрать один вариант из нескольких</a></li>
+                    <li><a href="#file">Загрузить файл</a></li>
+                    <li><a href="#tech">Техническая поддержка</a></li>
+                </ol>
+            </nav>
+        </header>
+
+        <body>
+       
+        <section>
+            <h2>Реализация основных форм HTML</h2>
+            В данной разделе были реализованы основные формы HTML. Все формы полностью работают, имеют
+            оптимизированнный и корректно написанный код. Данный раздел позволяет ознакомиться со всевозможными
+            способами ввода данных и отправки их на сервер или базу данных, которые возможно использовать в 
+            коммерческих и учебных целях. <br>
+
+            Просьба осуществить дополнительную проверку всех форм и их работоспособности. При наличии ошибок
+            или багов, просим обратиться в нашу <a href="#tech">техническую поддержку</a>. <br>
+
+            Благодарим за сотрудничество!
+
+            Основные формы HTML:
+            <ol>
+                <li>
+                    <form>
+                        <label id="text">Отправить текст:</label> <br>
+                        <input
+                            type="text"
+                            name="text"
+                            placeholder="Например, какой-то текст"
+                            required
+                        >
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <label id="email">Отправить email:</label> </br>
+                        <input 
+                            type="email"
+                            name="email"
+                            placeholder="Например, example@inbox.com"
+                            required
+                        >
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <label id="pass">Создать пароль:</label> </br>
+                        <input 
+                            type="password"
+                            name="password"
+                            placeholder="Например, kjf21ljasf"
+                            required
+                        >
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <label id="num">Придумать число:</label> </br>
+                        <input 
+                            type="number"
+                            name="number"
+                            placeholder="Например, 123412"
+                            required
+                        >
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <label id="checkbox">
+                            <input type="checkbox" name="number" value="1">
+                                Вариант 1
+                        </label> <br>
+
+                        <label>
+                            <input type="checkbox" name="number" value="2">
+                                Вариант 2
+                        </label> <br>
+
+                        <label>
+                            <input type="checkbox" name="number" value="3">
+                                Вариант 3
+                        </label> <br>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                <li>
+                    <form>
+                        <label id="data">Выберите дату:</label> </br>
+                        <input 
+                            type="data"
+                            name="data"
+                            placeholder="Например, 03.04.1985"
+                            required
+                        >
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                <li>
+                    <li>
+                    <form id="radio">
+                        <p>Выберите один вариант из нескольких:</p> </br>
+                        <label>
+                            <input 
+                                type="radio"
+                                name="fruit"
+                                value="Ананас"
+                            >
+                            Ананас
+                        </label> <br>
+                        
+                        <label>
+                            <input 
+                                type="radio"
+                                name="fruit"
+                                value="Ежевика"
+                            >
+                            Ежевика
+                        </label> <br>
+                        
+                        <label>
+                            <input 
+                                type="radio"
+                                name="fruit"
+                                value="Яблоко"
+                            >
+                            Яблоко
+                        </label> <br>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+                </li>
+                <li>
+                    <form>
+                        <label id="file">Загрузите файл:</label> </br>
+                        <input 
+                            type="file"
+                            name="photo"
+                        > </br>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </li>
+            </ol>
+        </section>
+
+    <section>
+        <h2 id="tech">Техническая поддержка</h2>
+        Опишите проблему в форме ниже и нажмите "отправить". Наши специалисты свяжутся с вами в течении
+        24 часов!
+        <form>
+            <label>Опишите проблему ниже:</label> <br>
+            <input 
+                type="text" 
+                name="problem"
+                placeholder="Например, не работает форма №2" 
+                required
+            >
+            <button>Отправить</button>
+        </form>
+        
+        <form>
+            <label>Введите адрес вашей электронной почты для обратной связи:</label> <br>
+            <input 
+                type="email" 
+                name="email"
+                placeholder="Например, inbox@example.com" 
+                required
+            > 
+            <button>Отправить</button>
+        </form>
+    </section>
+        </body>
+    </main>
+</html>
