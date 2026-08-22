@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Оставить заявку</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+
+    <body>
+        <header>
+            <table class="headerMenu">
+                <thead>
+                    <tr>
+                    <th><a href="main.html">Главная</a></th>
+                    <th><a href="uslugi.html">Услуги</a></th>
+                    <th><a href="tarifi.html">Тарифы</a></th>
+                    <th><a href="zayavka.html">Оставить заявку</a></th>
+                    <th><a href="contacts.html">Контакты</a></th>
+                    </tr>
+                </thead>
+            </table>
+        </header>
+    
+        <main>
+            <section>
+                <h2>Оставить заявку</h2>
+                 Хотите собрать новый компьютер или модернизировать старый? <br>
+
+                Заполните форму, и мы свяжемся с вами для обсуждения конфигурации. 
+
+                <h3>Данные клиента</h3>
+
+                <form>
+                    <label>Введите ваше имя: </label> <br>
+                    <input  
+                        type="text" 
+                        name="Name"
+                        class="input-field"
+                        required
+                    >
+                
+                    <button type="submit" class="button-field">Отправить</button>
+                </form> 
+
+                <form>
+                    <label>Введите адрес вашей электронной почты: </label> <br>
+                    <input 
+                        type="email" 
+                        name="email"
+                        class="input-field"
+                        required
+                    >
+                
+                    <button type="submit" class="button-field">Отправить</button>
+                </form> 
+
+                <form>
+                    <label>Введите ваш номер телефона: </label> <br>
+                    <input 
+                        type="number" 
+                        name="phonenumber"
+                        class="input-field"
+                        required
+                    >
+                
+                    
+                </form> 
+            </section>  
+            
+            <section>
+                <h3>Для чего нужен компьютер?</h3>
+                Укажите, для чего вам нужен компьютер (выберите один вариант или несколько):
+                <form>
+                        <label>
+                            <input type="checkbox" name="needs" value="Игры">
+                                Игры
+                        </label> <br>
+
+                        <label>
+                            <input type="checkbox" name="needs" value="Работа">
+                                Работа
+                        </label> <br>
+
+                        <label>
+                            <input type="checkbox" name="needs" value="Учёба">
+                                Учёба
+                        </label> <br>
+                        
+                        <label >
+                            <input type="checkbox" name="needs" value="Программирование">
+                                Программирование
+                        </label> <br>
+
+                        <label>
+                            <input type="checkbox" name="needs" value="Монтаж видео">
+                                Монтаж видео
+                        </label> <br>
+
+                        <label>
+                            <input type="checkbox" name="needs" value="Учёба">
+                                Учёба
+                        </label> <br>
+                        
+                        <label>
+                            <input type="checkbox" name="needs" value="Другое">
+                                Другое
+                        </label> <br>
+                
+            </section>
+
+            <section>
+                <h3>Примерный бюджет</h3>
+                <form>
+                        <p>Выберите примерный бюджет:</p> </br>
+                        <label>
+                            <input 
+                                type="radio"
+                                name="budget"
+                                value="50000"
+                            >
+                            До 50 000 ₽
+                        </label> <br>
+                        
+                        <label>
+                            <input 
+                                type="radio"
+                                name="fruit"
+                                value="100000"
+                            >
+                            50 000–100 000 ₽
+                        </label> <br>
+                        
+                        <label>
+                            <input 
+                                type="radio"
+                                name="budget"
+                                value="150000"
+                            >
+                            100 000–150 000 ₽
+                        </label> <br>
+
+                        <label>
+                            <input 
+                                type="radio"
+                                name="budget"
+                                value="200000"
+                            >
+                            150 000–250 000 ₽
+                        </label> <br>
+
+                        <label>
+                            <input 
+                                type="radio"
+                                name="budget"
+                                value="250000"
+                            >
+                            Более 250 000 ₽
+                        </label> <br>
+                    </form>
+            </section>
+        
+            <section>
+                <h3>Наличие комплектующих</h3>
+                Укажите, есть ли у вас сейчас комплектующие:
+                <form>
+                        <label>
+                            <input 
+                                type="radio"
+                                name="comp"
+                                value="Да"
+                            >
+                            Да
+                        </label> <br>
+                        
+                        <label>
+                            <input 
+                                type="radio"
+                                name="comp"
+                                value="Нет"
+                            >
+                            Нет
+                        </label> <br>
+                        
+                        <label>
+                            <input 
+                                type="radio"
+                                name="comp"
+                                value="Частично"
+                            >
+                            Частично
+                        </label> <br>
+            </section>
+        
+            <section>
+                <h3>Комментарий</h3>
+                Расскажите подробнее, какой компьютер вы хотите собрать и какие требования для вас наиболее важны. <br>
+                <input
+                            type="text"
+                            name="text"
+                            placeholder="Например, мне нужен мощный бюджетный ПК для игр"
+                            required
+                            class="input-field"
+                        >
+                <br>    
+                
+                <button type="submit" class="button-field">Отправить заявку</button>
+            </section>
+        </main>
+    
+        <br>
+
+        <footer>
+            <section>
+                <b>PC Forge — сервис сборки и настройки компьютеров</b> <br>
+
+                Сборка • Настройка • Модернизация • Диагностика <br>
+
+                © 2026 PC Forge
+            </section>
+        </footer>
+    </body>
+
+</html>
